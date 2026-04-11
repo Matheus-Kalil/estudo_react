@@ -91,12 +91,18 @@ form {
 }
 
 .actions {
-    text-align: center;
+    align-items: center;
     justify-content: space-between;
     
-    display: flex;
     flex-direction: column;
-    gap: 10px; /* espaço entre os botões */
+    display: flex;
+    gap: 5px; /* espaço entre os botões */
+}
+
+.actions.btnyn {
+    display: inline;
+    flex-direction: row;
+    text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -275,7 +275,7 @@ useEffect(() => {
           onChange={(e) => setEditedUser({ ...editedUser, email: e.target.value })}
         />
 
-        <div className='actions'>
+        <div className='actions btnyn'>
           <button className='btncrud confirm' onClick={() => updateUsers(editedUser.id)} disabled={loading}>{loading ? "Salvando..." : "Salvar"}</button>
           {" "}
           <button ref={lastButtonRef} className='btncrud cancel' onClick={() => closeModal()}>Cancelar</button>
@@ -285,7 +285,7 @@ useEffect(() => {
         <h1>Tem certeza?</h1>
         <p className='confirmEsc'>O usuário será excluido</p>
 
-        <div className="actions">
+        <div className="actions btnyn">
           <button
             ref={confirmFirstRef}
             className='btncrud confirm'
