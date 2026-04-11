@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 100px;
+    padding: 10px;
 }
 
 h1 {
@@ -26,8 +27,9 @@ form {
     padding: 30px;
     border-radius: 10px;
     background-color: #2E2D4E;
-    max-width: 50%;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -65,6 +67,7 @@ form {
     margin: 10px;
     padding: 10px;
     width: 400px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -88,10 +91,12 @@ form {
 }
 
 .actions {
-    gap: 10px; /* espaço entre os botões */
     text-align: center;
     justify-content: space-between;
     
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espaço entre os botões */
 }
 
 .btncrud {
@@ -102,6 +107,12 @@ form {
 
 .confirm {
     background: #4CAF50;
+}
+
+@media (min-width: 768px) {
+    .actions {
+        flex-direction: row;
+    }
 }
 
 .cancel {
