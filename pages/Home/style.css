@@ -105,11 +105,11 @@ form {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .actions {
-        flex-direction: row;
+        
     }
-}
+}*/
 
 .btncrud {
     width: 100px;
