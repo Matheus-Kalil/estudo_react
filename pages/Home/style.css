@@ -99,6 +99,12 @@ form {
     gap: 10px; /* espaço entre os botões */
 }
 
+@media (min-width: 768px) {
+    .actions {
+        flex-direction: row;
+    }
+}
+
 .btncrud {
     width: 100px;
     height: 40px;
@@ -109,13 +115,7 @@ form {
     background: #4CAF50;
 }
 
-@media (min-width: 768px) {
-    .actions {
-        flex-direction: row;
-    }
-}
-
-.cancel {
+.btncrud.cancel {
     background: #F44336;
 }
 
